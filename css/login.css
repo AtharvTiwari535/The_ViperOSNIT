@@ -1,0 +1,79 @@
+body{
+    background: #000000;
+}
+.logfor{
+ 
+
+}
+
+form{
+    padding: 50px;
+    border: 2px solid #f9873a;
+    margin: 0 10% 10% 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+input[type=text]{
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #000000;
+    border: 2px solid #f9873a;
+    color: #f9873a; 
+
+}
+
+input[type=password]{
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #000000;
+    border: 2px solid #f9873a;
+    color: #f9873a; 
+
+}
+
+input[type=submit]{
+    padding: 5px 15px 5px 15px;
+    
+    color: #f9873a;
+    background-color: #000000;
+    border: 2px solid #f9873a;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+
+input[type=submit]:hover{
+    color: #000000;
+    background-color: #f9873a;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+input[type=reset]{
+    padding: 5px 15px 5px 15px;
+    
+    color: #f9873a;
+    background-color: #000000;
+    border: 2px solid #f9873a;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+input[type=reset]:hover{
+    color: #000000;
+    background-color: #f9873a;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.logotext{
+    color: #f9873a;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
