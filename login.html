@@ -1,21 +1,78 @@
-<html>
-        <head>
-        <title>The Viper</title>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Roboto+Mono:wght@100;700&family=Water+Brush&display=swap" rel="stylesheet">
-        <link href="css/login.css" rel="stylesheet">                 
-        </head>
-        <body>
-            <div class="logfor">
-               
-            <form>
-                <img src="logo.png" height="20%" ><br><br><br>
-                <div class="logotext">Viper OSNIT</div><br>
-                <input type="text" placeholder="Login Id"><br>
-                <br><input type="password" placeholder="Password"><br><br>
-                <input type="submit">
-                <input type="reset">
-            </form>
-        </div>
-        </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Viper | Login</title>
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+form {
+    color: #f98732;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: Orgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #f98732;
+}
+
+form input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background: #f9873a;
+    color: #000000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.stop {transition:1s;}
+
+
+.move {
+    transform: translateX(100%);
+}
+</style>
+
+<body>
+    
+    <form action="#">
+        <center><h1 style="color: #f98732;">Login</h1></center>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <input type="submit" value="submit" id="submit" />
+        <h6>Your password should contain <br>1. A special character <br> 2. A upper case character<br>3. A lower case character <br>4. A numerical character<br>5. Minimum of 14 digits</h6>
         
-        </html>
+    </form>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
