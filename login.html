@@ -33,6 +33,7 @@ form {
     border-radius: 20px;
     padding: 20px;
     border: 2px solid #f98732;
+    box-shadow: 5px 5px 10px 10px #f9873a;
 }
 
 form input {
@@ -58,17 +59,26 @@ form input[type="submit"]:hover {
 .move {
     transform: translateX(100%);
 }
+.logovip img{
+    width: 50%;
+    
+}
 </style>
 
 <body>
     
     <form action="#">
-        <center><h1 style="color: #f98732;">Login</h1></center>
+        <center>
+            <div class="logovip">
+                <img src="logo.png">
+            </div>
+            <h1 style="color: #f98732;">Login</h1>
+        </center>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" placeholder="Username" autocomplete="off"/>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
-        <input type="submit" value="submit" id="submit" />
+        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off"/>
+        <input type="submit" value="Submit" id="submit" />
         <h6>Your password should contain <br>1. A special character <br> 2. A upper case character<br>3. A lower case character <br>4. A numerical character<br>5. Minimum of 14 digits</h6>
         
     </form>
