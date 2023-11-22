@@ -9,7 +9,9 @@
     <title>The Viper</title>
     <link href="css/hacker.css" rel="stylesheet">
 
-    
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <style>
     .tall-row {
@@ -24,9 +26,14 @@
         z-index: 1;
         display: block;
     }
-
-
     </style>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+         // Setting text of element P with id gfg
+         $("#ipfill").html("Welcome "+data.ip);
+     })
+    </script>
 </head>
 
 <body>
@@ -47,11 +54,12 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="hacking-animation">
-                <p>
-                    $ Welcome to the Viper 
+                <p id="ipfill">
+
                 </p>
+                <p>$ Welcome to the Viper</p>
                 <p>$ An india based OSNIT tool</p>
-                <p>$ With a simple aim to ease the investigation </p>
+                
             </div>
         </div>
 
